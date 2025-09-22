@@ -1,0 +1,43 @@
+public class Student {
+    //eigenschaften
+    private String name;
+    private int age;
+    private boolean status;
+    
+    //konstruktor
+    public Student(String n, int a, boolean akt)
+    {
+        setName(n);
+        setAge(a);
+        setStatus(akt);
+    }
+    public Student (String n, int a){
+        setName(n);
+        setAge(a);
+    }
+
+    //getters
+    public String getName() {
+        return name;
+    }
+    public int getAge(){
+        return age;
+    }
+    public boolean getStatus(){
+        return status;
+    }
+    //setters
+    public void setName (String n){
+        this.name= n;
+    }
+    public void setAge (int a){
+        this.age= a;
+    }
+    public void setStatus(boolean akt){
+        this.status= akt;
+    }
+    //print-Methode
+    public void printStudent(){
+        System.out.println(name+" is the best Student");
+    }
+}
